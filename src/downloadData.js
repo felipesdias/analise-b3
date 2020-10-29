@@ -94,6 +94,7 @@ async function downloadHistorico(papel) {
 }
 
 ;(async () => {
+    await fs.mkdir(__dirname + '/historico');
     const papeis = JSON.parse(await fs.readFile(__dirname + '/papeis.json', 'utf-8'));
     
     for (const papel of papeis) {

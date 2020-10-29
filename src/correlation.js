@@ -3,6 +3,8 @@ const fs = require('fs').promises;
 const ss = require('simple-statistics');
 
 ;(async () => {
+    await fs.mkdir(__dirname + '/historico');
+    
     const listaPapeis = await fs.readdir(__dirname + '/historico');
 
     const papeis = {};
