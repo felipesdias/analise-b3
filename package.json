@@ -1,0 +1,18 @@
+{
+  "name": "analise-b3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "download": "node src/downloadData.js",
+    "correlation": "node src/correlation.js",
+    "las": "node src/longAnsShort.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^2.6.1",
+    "simple-statistics": "^7.3.0"
+  }
+}
